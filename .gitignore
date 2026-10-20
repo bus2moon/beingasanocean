@@ -1,0 +1,13 @@
+# Godot cache (the *.import files beside assets ARE committed)
+.godot/
+/android/
+*.translation
+export_presets.cfg
+build/
+
+# Blender backups
+*.blend1
+*.blend2
+
+# OS
+.DS_Store

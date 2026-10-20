@@ -9,7 +9,8 @@
 ```
 Player (CharacterBody3D, layer 2, mask 1)      scripts/player/player.gd
 ├── CollisionShape3D   capsule r0.3 h1.75, feet at origin
-├── Visual             placeholder mesh; rotated to `facing`
+├── Visual             rotated to `facing`; holds the Mannequin model (faces +Z, so it's rotated 180°)
+├── AnimationController  picks clips from state and speed (scripts/player/animation_controller.gd)
 ├── StateMachine       scripts/player/state_machine.gd
 │   ├── Idle, Move     extend GroundState (states/ground_state.gd)
 │   ├── Jump, Fall     extend AirState    (states/air_state.gd)

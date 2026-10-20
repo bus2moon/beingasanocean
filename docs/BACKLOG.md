@@ -7,6 +7,11 @@
 - [ ] Blender asset validator (scale applied, naming, polygon budget) in `tools/blender/`
 - [ ] Settings menu with rebinding and sensitivity; save to `user://settings.cfg`
 
+## Animation
+- [ ] Vault and climb clips. Quaternius UAL 2 has parkour clips (its free Standard version is on itch.io and has to be downloaded in a browser). Vault and Climb play the air loop until then.
+- [ ] Tune `AnimationController.GAITS` reference speeds to cut down foot sliding
+- [ ] Use `Roll` for the Phase 2 landing roll
+
 ## Phase 2
 - [ ] Wall-run, wall-jump, slide, timed landing roll (cancels Land), ledge hang and shimmy, balance beam, pipe and rail traversal
 - [ ] Rooftop obstacle course level

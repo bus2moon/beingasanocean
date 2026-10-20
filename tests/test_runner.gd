@@ -23,6 +23,7 @@ func _ready() -> void:
 		test_vault_thin_wall, test_auto_vault_at_sprint, test_step_up_low_block,
 		test_climb_2m_block, test_too_tall_wall_no_climb, test_air_ledge_grab,
 		test_hard_landing, test_soft_landing, test_graybox_level,
+		test_animation_follows_state,
 	]
 	for t: Callable in tests:
 		await _run(t)
@@ -307,3 +308,19 @@ func test_graybox_level() -> void:
 	await _frames(60)
 	_check(_history.has(&"Climb"), "climbed level block, got %s" % [_history])
 	_near(_player.global_position.y, 2.0, 0.06, "on top of ClimbBlock_200")
+
+
+func test_animation_follows_state() -> void:
+	_arena()
+	await _spawn(Vector3.ZERO)
+	var anim: AnimationPlayer = _player.get_node("AnimationController").anim
+	_check(anim.current_animation == &"Idle", "idle clip, got %s" % anim.current_animation)
+	_intent.move = Vector2(0, 1)
+	await _frames(40)
+	_check(anim.current_animation == &"Jog_Fwd", "jog clip, got %s" % anim.current_animation)
+	_intent.sprint = true
+	await _frames(40)
+	_check(anim.current_animation == &"Sprint", "sprint clip, got %s" % anim.current_animation)
+	await _press_jump()
+	await _frames(3)
+	_check(anim.current_animation == &"Jump", "air clip, got %s" % anim.current_animation)

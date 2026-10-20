@@ -2,7 +2,7 @@
 
 The working title is **PROJECT CUB**. It's a third-person action-adventure about parkour, skateboarding and music, following Cub from age 16 to the stage. It's built in Godot 4 and Blender.
 
-**Current phase:** Phase 1, the movement prototype ("Graybox Block"). A placeholder capsule Cub runs, jumps, vaults and climbs on a graybox test course.
+**Current phase:** Phase 1, the movement prototype ("Graybox Block"). A placeholder mannequin Cub (Quaternius, CC0) runs, jumps, vaults and climbs on a graybox test course. Third-party assets are listed in [CREDITS.md](CREDITS.md).
 
 ## Requirements
 

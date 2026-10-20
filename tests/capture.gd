@@ -13,6 +13,7 @@ func _ready() -> void:
 	var player: Player = main.get_node("Player")
 	var intent := PlayerIntent.new()
 	intent.move = Vector2(0, 1)
+	intent.sprint = true
 	player.scripted_intent = intent
 	var samples: Array[float] = []
 	var shot: Image
@@ -20,7 +21,7 @@ func _ready() -> void:
 		await get_tree().process_frame
 		if i > 240:
 			samples.append(Engine.get_frames_per_second())
-		if i == 100:
+		if i == 70:
 			shot = get_viewport().get_texture().get_image()
 	shot.save_png("user://capture.png")
 	samples.sort()

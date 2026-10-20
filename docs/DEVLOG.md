@@ -9,6 +9,9 @@
 - `tools/blender/gen_graybox_block.py` generates `assets/levels/graybox_block.glb` with lanes A–E.
 - 17 headless tests (36 checks), all passing. Windowed capture: 60 FPS min/median on the M1.
 
+- Swapped the capsule for the Quaternius UAL mannequin (CC0). AnimationController picks idle, walk, jog and sprint by speed, and uses jump and land clips. 18 tests, 40 checks, all passing; still 60 FPS.
+- The GitHub push failed: "Your account is suspended" (403). Work is committed locally only.
+
 **Not verified**
 - Feel. Nobody has played it with a controller or keyboard yet.
 

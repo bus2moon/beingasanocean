@@ -10,7 +10,7 @@
 - 17 headless tests (36 checks), all passing. Windowed capture: 60 FPS min/median on the M1.
 
 - Swapped the capsule for the Quaternius UAL mannequin (CC0). AnimationController picks idle, walk, jog and sprint by speed, and uses jump and land clips. 18 tests, 40 checks, all passing; still 60 FPS.
-- The GitHub push failed: "Your account is suspended" (403). Work is committed locally only.
+- Pushed to github.com/bus2moon/beingasanocean (main + dev). This repo uses gh credentials (`credential.helper = !gh auth git-credential`) because the macOS keychain has an old login saved.
 
 **Not verified**
 - Feel. Nobody has played it with a controller or keyboard yet.

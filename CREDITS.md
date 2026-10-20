@@ -1,6 +1,12 @@
 # Credits and third-party assets
 
-Every third-party asset must have a licence that allows commercial use. CC0 is preferred; MIT is fine for code. **No non-commercial (NC) licences.**
+**Rule: only assets that are 100% free to use, change and sell, forever.** (D-009)
+
+| Allowed | Not allowed |
+|---|---|
+| CC0 / public domain, MIT, Unlicense, BSD, zlib, Apache-2.0, CC-BY (credit only) | NC (non-commercial), ND (no derivatives), SA / GPL / LGPL (force their licence onto our game), "free for personal use", Mixamo or other platform-terms assets (can't sit in a public repo), paid packs re-uploaded for free, anything with an unknown licence |
+
+Every folder under `assets/` with third-party files needs a `LICENSE.txt` and a row below. `tools/check_licenses.py` enforces this, and `tools/run_tests.sh` runs it.
 
 | Asset | Author | Licence | Source | Used for |
 |---|---|---|---|---|

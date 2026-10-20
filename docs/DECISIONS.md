@@ -9,6 +9,6 @@
 | D-005 | 2026-10-20 | Input bindings live in the `Settings` autoload, not `project.godot` | Easy to diff and test; rebinding works at runtime |
 | D-006 | 2026-10-20 | Air grab reach is 1.4 m above the feet (standing climb is 2.3 m) | Without a lower air limit, any jump reached 3.5 m and walls marked "too tall" stopped meaning anything |
 | D-007 | 2026-10-20 | Camera auto-recentres only when the stick is pushed mostly forward | Recentring during a sideways hold bent the input direction and spiralled the player |
-| D-009 | 2026-10-20 | Reuse free assets wherever possible. Art must be CC0 or similar (no NC licences); code must be MIT or similar | Creator: "don't reinvent the wheel" and "don't buy anything". GDQuest's controller art is CC-BY-NC-SA, so it was rejected. |
+| D-009 | 2026-10-20 | Reuse free assets wherever possible. Only use assets that are 100% free to use and sell: CC0, MIT, BSD, zlib, Apache, Unlicense or CC-BY. Never NC, ND, SA or GPL, personal-use-only, or platform-terms assets. The list is in CREDITS.md | Creator: "don't reinvent the wheel" and "don't buy anything". GDQuest's controller art is CC-BY-NC-SA, so it was rejected. |
 | D-010 | 2026-10-20 | Placeholder Cub is the Quaternius UAL mannequin, scaled to 1.75 m and turned 180° (the model faces +Z) | Free, CC0, rigged, with walk, jog, sprint, jump and roll included |
 | D-008 | 2026-10-20 | Baseline performance target: Apple M1 / 16 GB at 60 FPS | It's the development machine; most gaming PCs exceed it |

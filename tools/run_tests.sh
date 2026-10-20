@@ -5,5 +5,6 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 GODOT="${GODOT:-/Applications/Godot.app/Contents/MacOS/Godot}"
 [ -x "$GODOT" ] || GODOT="$HOME/Downloads/Godot.app/Contents/MacOS/Godot"
+python3 tools/check_licenses.py
 "$GODOT" --headless --path . --import >/dev/null 2>&1
 "$GODOT" --headless --path . --fixed-fps 60 res://tests/test_runner.tscn
